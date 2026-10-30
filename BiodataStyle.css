@@ -1,0 +1,353 @@
+body{
+    background-size: cover;
+    background-position: center;
+    background-image: url(star.jpg);
+
+}
+h1{
+    font-family: "BREB";
+    color: darkolivegreen;
+    font-size: 45pt;
+    background-color: greenyellow;
+    width: 500px;
+    text-align: center;
+}
+h2{
+    font-family: "HEHE LEFU";
+    color: slateblue;
+    font-size: 30pt;
+    background-color: plum;
+    text-align: center;
+    width: 950px;
+}
+h3{
+    font-family: "BREB";
+    color: darkolivegreen;
+    font-size: 45pt;
+    background-color: greenyellow;
+    width: 700px;
+    text-align: center;
+}
+h4{
+    font-family: "HEHE LEFU";
+    color:lime;
+    font-size: 40pt;
+    background-color:black;
+    text-align: center;
+    width: 550px;
+}
+h5{
+    font-family: "HEHE LEFU";
+    color:crimson;
+    font-size: 40pt;
+    background-color:wheat;
+    text-align: center;
+    width: 550px;
+}
+h6{
+    font-family: "HEHE LEFU";
+    color:plum;
+    font-size: 40pt;
+    background-color:rebeccapurple;
+    text-align: center;
+    width: 350px;
+}
+/* format font: .otf/.ttf */
+@font-face {
+    font-family:"HEHE LEFU";
+    src: url(creamy_chicken/Creamy\ Chicken.otf);
+}
+@font-face {
+    font-family:"BREB";
+    src: url(creamy_chicken/Creamy\ Chicken.otf);
+}
+div.biodata{
+    margin: 30px auto;
+    width: 60%;
+    background-color: cornsilk;
+    color: midnightblue;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+div.isi{
+    font-family: "FIH";
+}
+    @font-face {
+    font-family:"FIH";
+    src: url(problem_child/Problem-Child.otf);
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px dotted violet;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+div.foto:hover img.top{
+    opacity: 0;
+    transform: 2;
+}
+div.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+div.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.lagu{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+img{
+    padding: 10px;
+}
+div.love{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 crimson;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    color: maroon;
+    font-size: 13px;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+
+div.love:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.blue{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 mediumturquoise;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 15px;
+    color:darkslateblue;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.blue:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.heaven{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 lightsteelblue;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 15px;
+    color:darkslategray;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.heaven:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.food{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+div.potato{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rosybrown;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 20px;
+    color:saddlebrown;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.potato:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.macaroni{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rosybrown;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 20px;
+    color:saddlebrown;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.macaroni:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.kuotie{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rosybrown;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 20px;
+    color:saddlebrown;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.kuotie:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.omurice{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rosybrown;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 20px;
+    color:saddlebrown;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.omurice:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.donut{
+    width: 300px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rosybrown;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 20px;
+    color:saddlebrown;
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.donut:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.tierlist{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+div.mustache{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 darkseagreen;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 15px;
+    color:rgb(60, 117, 60);
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.mustache:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.felix{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 darkseagreen;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 15px;
+    color:rgb(60, 117, 60);
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.felix:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+div.duck{
+    width: 250px;
+    height: 250px;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 darkseagreen;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "FIH";
+    font-size: 15px;
+    color:rgb(60, 117, 60);
+    background-image: url(line.png);
+    background-size: cover;
+    background-position: center;
+}
+div.duck:hover{
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}

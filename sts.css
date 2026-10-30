@@ -1,0 +1,395 @@
+
+body{
+    background-image:url(background.jpg);
+    display:flex;
+    background-position:center;
+    background-size:cover;
+    margin: 0;
+}
+div.image-text-container {
+    position: relative;
+    width: 1250px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    font-family: "Beab";
+    text-align: center;
+}
+
+h1.image-text{
+    font-family:"Beab";
+    align-items:center;
+    justify-content:center;
+    font-size: 60pt;
+    color:white;
+    margin: 0;
+    padding: 0 20px;
+}
+@font-face {
+    font-family:"Beab";
+    src: url(canarias_trip/canarias_trip.otf);
+}
+div.content-wrapper{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+    pointer-events: none;
+}
+div.dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: rgba(24, 11, 1, 0.2);
+    transition: background-color 0.3s ease-in-out;
+}
+div.image-text-container:hover .dark-overlay {
+    background-color:rgba(24, 11, 1, 0.4);
+}
+.bg-image, .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1250px;
+    height: 300px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.bg-video {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+div.image-text-container:hover .bg-video {
+    opacity: 1;
+}
+
+div.image-text-container:hover .image-text{
+    color: cornsilk;
+    font-size: 70pt;
+}
+
+div.content{
+    position: relative;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width:1250px;
+}
+
+div.info{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    top: 20px;
+    gap: 20px;
+}
+
+div.apa {
+    color:white;
+    font-size: 35pt;
+    justify-content:center;
+    align-items:center;
+}
+
+div.dampak{
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    width: 1200px;
+    padding: 10px;
+    align-items: center;
+}
+
+h2{
+    font-family: "Beab";
+    font-size: 50pt;
+    letter-spacing: 2px;
+}
+
+div.positif{
+    width: 650px;
+    height: 500px;
+    flex: 0 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 hotpink;
+    color:mediumvioletred;
+    margin-bottom: 25px;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed mediumvioletred;
+    background-size: cover;
+    background-position: center;
+    background-image: url(positif.png);
+    padding: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.positif-text{
+     color:brown;
+     text-align: justify;
+     padding-left: 20px;
+     padding-right: 20px;
+}
+
+div.negatif{
+    width: 650px;
+    height: 500px;
+    flex: 0 0 auto;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 cornflowerblue;
+    color:rgb(38, 5, 79);
+    margin-bottom: 25px;
+    align-items: center;
+    text-align: center;
+    border: 2px dashed rgb(38, 5, 79);
+    background-size: cover;
+    background-position: center;
+    background-image: url(Negatif.png);
+    padding: 24px;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.negatif-text{
+    color:rgb(22, 4, 67);
+    text-align: justify;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+div.dampak:has(div.positif:hover) div.negatif:not(:hover){
+    opacity: 0.6;
+    filter: blur(1px) grayscale(20%);
+    scale: 90%;
+}
+
+div.dampak:has(div.negatif:hover) div.positif:not(:hover){
+    opacity: 0.6;
+    filter: blur(1px) grayscale(20%);
+    scale: 90%;
+}
+
+p{
+    font-family:"basic"
+}
+
+@font-face {
+    font-family: "basic";
+    src: url(inkydoo_regular/INKY_R_T.otf);
+}
+
+h1.pertanyaan{
+    margin-bottom:-50px;
+}
+
+div.sekarang{
+    text-align: center;
+    justify-content: center;
+    font-size: 30pt;
+    color:rgb(36, 11, 105);
+    background-color:rgba(255, 255, 255, 0.336);
+    border-radius:10px;
+}
+
+@font-face {
+    font-family: "Hehe";
+    src: url(digital_7/digital-7\ \(italic\).ttf);
+}
+
+div.sekarang-img{
+    display:flex;
+    justify-content: flex-start;
+}
+
+img.img-AI{
+    justify-content: flex-start;
+    z-index: 3;
+    width:350px;
+    height:500px;
+}
+
+h3.img-text{
+    z-index: 2;
+    justify-content: flex-start;
+    text-align:start;
+    font-family:"Beab";
+    font-size: 50pt;
+    color:rgb(36, 11, 105);
+    letter-spacing:2pt;
+}
+
+div.sekarang-content{
+    z-index: 2;
+    text-align: justify;
+    font-family:"basic";
+    font-size: 15pt;
+    margin-right: 30px;
+    color:darkslateblue;
+}
+
+div.help{
+    font-size:40pt;
+    color:rgb(51, 142, 106);
+    margin-bottom:-50px;
+}
+
+.line {
+    width: 1250px;
+    margin-top:40px;
+    overflow:hidden;
+    padding: 0;
+    border-radius: 15px;
+}
+
+.line-track {
+    display: flex;
+    width: max-content;
+    animation: line 30s linear infinite;
+}
+
+.line-content {
+    flex-shrink: 0;
+    white-space: nowrap;
+    color: white;
+    font-family: "granny";
+    font-size: 30pt;
+    padding-right: 60px;
+}
+
+@font-face {
+    font-family: "granny";
+    src: url(the_punk_grandmother/The\ Punk\ Grandmother.otf);
+}
+
+@keyframes line {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+div.organizations{
+    display: flex;
+    gap: 50px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    width:1200px;
+    height:350px;
+}
+
+div.WWF{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Beab";
+    color: rgb(51, 142, 106);
+    font-size: 15pt;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.WWF:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.eco{
+    width:400px;
+    height:400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Beab";
+    color: rgb(51, 142, 106);
+    font-size: 15pt;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.eco:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.giving{
+    width:400px;
+    height:400px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-family: "Beab";
+    color: rgb(51, 142, 106);
+    font-size: 15pt;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.giving:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.green{
+    width:400px;
+    height:400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Beab";
+    color: rgb(51, 142, 106);
+    font-size: 15pt;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.green:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.rainforest{
+    width:400px;
+    height:400px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    text-align: center;
+    font-family: "Beab";
+    color: rgb(51, 142, 106);
+    font-size: 15pt;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+div.rainforest:hover{
+    transition: transform 0.3s ease;
+    transform: scale(1.1);
+}
+
+div.thank{
+    width: 1200px;
+    margin-top: 50px;
+    justify-content: center;
+    position:center;
+}
